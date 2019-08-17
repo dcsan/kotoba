@@ -8,7 +8,11 @@ const loadShiritoriForeverChannels = require('./discord/shiritori_forever_helper
 const { apiKeys } = config;
 
 function createBot() {
-  fs.mkdirSync(path.join(__dirname, '..', 'data'), { recursive: true });
+  try {
+    fs.mkdirSync(path.join(__dirname, '..', 'data'), { recursive: true });
+  } catch (err) {
+    console.warn('data dir existed');
+  }
 
   const commandsDirectoryPath = path.join(__dirname, 'discord_commands');
   const messageProcessorsDirectoryPath = path.join(__dirname, 'discord_message_processors');
@@ -62,6 +66,7 @@ function createBot() {
     ...config,
   };
 
+  console.log('createBot -> OK');
   return new Monochrome(options);
 }
 
