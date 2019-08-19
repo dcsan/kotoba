@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>boxen</title>
+    <desc>Created with Sketch.</desc>
+    <g id="boxen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill-opacity="0.5" fill="#FF0000" cx="255.5" cy="165.5" r="152.5"></circle>
+        <circle id="Oval-Copy" fill-opacity="0.5" fill="#00FF00" cx="168.5" cy="337.5" r="152.5"></circle>
+        <circle id="Oval-Copy-2" fill-opacity="0.5" fill="#0000FF" cx="347.5" cy="337.5" r="152.5"></circle>
+        <text id="RED!" font-family="ArialMT, Arial" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#000000">
+            <tspan x="178.391862" y="144">RED!</tspan>
+        </text>
+        <text id="Green!" font-family="ArialMT, Arial" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#000000">
+            <tspan x="42.136133" y="379">Green!</tspan>
+        </text>
+        <text id="Blue!" font-family="ArialMT, Arial" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#FFFFFF">
+            <tspan x="295.579427" y="379">Blue!</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#979797" fill="#000000" x="6.5" y="13.5" width="484" height="53"></rect>
+        <text id="DIN-condensed" font-family="DINCondensed-Bold, DIN Condensed" font-size="60" font-style="condensed" font-weight="bold" letter-spacing="0.2166666" fill="#FFFFFF">
+            <tspan x="10" y="60">DIN condensed</tspan>
+        </text>
+    </g>
+</svg>
