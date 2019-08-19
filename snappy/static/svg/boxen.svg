@@ -3,20 +3,37 @@
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
     <title>boxen</title>
     <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
     <g id="boxen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="235" height="500"></rect>
         <circle id="Oval" fill-opacity="0.5" fill="#FF0000" cx="255.5" cy="165.5" r="152.5"></circle>
         <circle id="Oval-Copy" fill-opacity="0.5" fill="#00FF00" cx="168.5" cy="337.5" r="152.5"></circle>
         <circle id="Oval-Copy-2" fill-opacity="0.5" fill="#0000FF" cx="347.5" cy="337.5" r="152.5"></circle>
+        <path d="M27.5,146 L460.777323,146" id="Line" stroke="#979797" stroke-linecap="square"></path>
+        <path d="M224,10 L224,461" id="Line-Copy" stroke="#FFCD00" stroke-linecap="square"></path>
         <text id="RED!" font-family="ArialMT, Arial" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#000000">
-            <tspan x="178.391862" y="144">RED!</tspan>
+            <tspan x="230.391862" y="145">RED!</tspan>
         </text>
-        <text id="Green!" font-family="ArialMT, Arial" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#000000">
-            <tspan x="42.136133" y="379">Green!</tspan>
+        <text id="日本語" font-family="PingFangSC-Regular, PingFang SC" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#FFFFFF">
+            <tspan x="46.3500002" y="142">日本語</tspan>
+        </text>
+        <text id="中文" font-family="PingFangSC-Regular, PingFang SC" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#FFFFFF">
+            <tspan x="107.566667" y="231">中文</tspan>
+        </text>
+        <text id="regular" font-family="ArialMT, Arial" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#000000">
+            <tspan x="35.7157557" y="325">regular</tspan>
+        </text>
+        <text id="regular-copy" font-family="Arial-BoldMT, Arial" font-size="60" font-weight="bold" letter-spacing="0.216666594" fill="#000000">
+            <tspan x="19.0751307" y="392">regular</tspan>
         </text>
         <text id="Blue!" font-family="ArialMT, Arial" font-size="60" font-weight="normal" letter-spacing="0.2166666" fill="#FFFFFF">
-            <tspan x="295.579427" y="379">Blue!</tspan>
+            <tspan x="230.079427" y="396">Blue!</tspan>
         </text>
-        <rect id="Rectangle" stroke="#979797" fill="#000000" x="6.5" y="13.5" width="484" height="53"></rect>
         <text id="DIN-condensed" font-family="DINCondensed-Bold, DIN Condensed" font-size="60" font-style="condensed" font-weight="bold" letter-spacing="0.2166666" fill="#FFFFFF">
             <tspan x="10" y="60">DIN condensed</tspan>
         </text>

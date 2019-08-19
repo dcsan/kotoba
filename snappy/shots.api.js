@@ -38,7 +38,7 @@ router.get('/shots/test/svg', async (req, res) => {
 
   const render =
     sharp()
-      .resize(250, 250)
+      .resize(500, 500)
       // .composite([{
       //   input: watermark,
       // }])
