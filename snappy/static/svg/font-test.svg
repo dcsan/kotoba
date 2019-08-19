@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>font-test</title>
+    <desc>Created with Sketch.</desc>
+    <g id="font-test" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="500" height="500"></rect>
+        <text id="red-text" font-family="Impact" font-size="60" font-style="condensed" font-weight="700" letter-spacing="0.216666594" fill="#FF0000">
+            <tspan x="35" y="87">red text</tspan>
+        </text>
+    </g>
+</svg>

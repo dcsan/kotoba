@@ -26,11 +26,12 @@ router.get('/shots/solid', async (req, res) => {
 })
 
 router.get('/shots/test/svg', async (req, res) => {
-  const svgData = Buffer.from(
-    '<svg><rect x="0" y="0" width="200" height="200" rx="50" ry="50"/></svg>'
-  );
+  // const svgData = Buffer.from(
+  //   '<svg><rect x="0" y="0" width="200" height="200" rx="50" ry="50"/></svg>'
+  // );
 
-  const input = './static/svg/boxen.svg'
+  // const input = './static/svg/boxen.svg'
+  const input = './static/svg/font-demo.svg'
   const reader = fs.createReadStream(input);
 
   const output = './output/out.png'
@@ -49,22 +50,12 @@ router.get('/shots/test/svg', async (req, res) => {
   reader
     .pipe(render)
     .pipe(writer)
-    // .then(() => {
-    //   console.log('done')
-    // })
-    // .pipe(res)
 
   writer.on('finish', () => {
     log('ended writer')
-    // res.location(output)
-    // res.end()
-    // res.send(Buffer.from(writer))
-    // res.send('rendered')
+    // res.location(output) // redirect to rendered file
     res.sendFile(output, {root: __dirname})
-    //   writer.end();
-    //   // res.end()
   });
-
 
 })
 
