@@ -20,9 +20,11 @@ function createBot() {
   const logDirectoryPath = path.join(__dirname, '..', 'data', 'logs');
   const persistenceDirectoryPath = path.join(__dirname, '..', 'data', 'monochrome-persistence');
 
+  console.log('config.prefixes', config.prefixes);
+
   const options = {
     // prefixes: ['k!'],
-    prefixes: ['!'],
+    prefixes: config.prefixes,
     commandsDirectoryPath,
     messageProcessorsDirectoryPath,
     logDirectoryPath,

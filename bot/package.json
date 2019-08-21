@@ -5,7 +5,7 @@
   "main": "./src/start.js",
   "scripts": {
     "start": "node --max_old_space_size=2000 .",
-    "dev": "nodemon --max_old_space_size=2000 .",
+    "dev": "DEBUG=*,-follow-redirects nodemon --max_old_space_size=2000 .",
     "lint": "./node_modules/.bin/eslint ./src/",
     "lintfix": "./node_modules/.bin/eslint --fix ./src/",
     "buildall": "node ./src/build/buildall.js",
@@ -25,26 +25,30 @@
   },
   "nodemonConfig": {
     "watch": "src",
-    "ignore": ["test/*", "docs/*", "node_modules/*", "generated", "data", "resources"],
+    "ignore": [
+      "test/*",
+      "docs/*",
+      "node_modules/*",
+      "generated",
+      "data",
+      "resources"
+    ],
     "delay": "500"
   },
-
   "homepage": "https://github.com/mistval/kotoba#readme",
   "dependencies": {
     "adm-zip": "0.4.13",
     "axios": "0.19.0",
-
     "cheerio": "1.0.0-rc.2",
+    "disk-array": "^1.0.1",
+    "edict-index": "^0.0.1",
     "html-entities": "1.2.1",
     "kitsu": "7.0.0",
     "kotoba-node-common": "file:../node-common",
     "moment": "2.24.0",
     "mongoose": "5.5.15",
-    "disk-array": "^1.0.1",
     "monochrome-bot": "^2.3.7",
-
     "shiritori": "^2.0.4",
-    "edict-index": "^0.0.1",
     "unofficial-jisho-api": "^2.0.1"
   },
   "devDependencies": {
@@ -52,7 +56,6 @@
     "csv-stringify": "^5.3.0",
     "eslint": "4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0",
-    "heapdump": "^0.3.9"
+    "eslint-plugin-import": "^2.11.0"
   }
 }

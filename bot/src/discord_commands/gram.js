@@ -3,19 +3,18 @@ const GramLib = require('../common/gram/GramLib');
 const config = require('../../../config');
 
 module.exports = {
-  commandAliases: ['g'],
-  uniqueId: 'gram12345',
+  commandAliases: ['g', 'gram'],
+  uniqueId: 'gram',
   cooldown: config.lexy.cooldown,
   shortDescription: 'grammar info',
   canBeChannelRestricted: false,
   async action(bot, msg, suffix, monochrome) {
-    const reload = await monochrome.reload();
-    console.log('reload', reload);
     console.log(`suffix: [${suffix}]`);
-
     console.log('msg.content', msg.content);
-    const cname = suffix || 'dao';
-    const md = GramLib.getGram(cname);
-    return msg.channel.createMessage(md, null, msg);
+    const cname = suffix || 'beki';
+    const gram = await GramLib.getGram(cname);
+    const embed = await GramLib.makeEmbed(gram);
+    console.log('embed', embed);
+    return msg.channel.createMessage(embed, null, msg);
   },
 };
